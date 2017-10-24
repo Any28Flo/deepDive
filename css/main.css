@@ -32,7 +32,14 @@ h2 .informacion{
 }
 div.login{
   background: #959dad;
-  opacity: 0.25;
+opacity: inherit;
+opacity: 0.25;
+/*opacity: unset;*/
+/*opacity: initial;*/
   height: 25vh;
+}
+div.user{
+  padding-top: 10px;
+  padding-bottom: 10px;
 
 }
