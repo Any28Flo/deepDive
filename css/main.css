@@ -26,16 +26,18 @@ html{
   margin: 0;
   font-size: 25px;
   margin-top: 50px;
-}
-h2 .informacion{
   font-family: 'Montserrat', sans-serif;
 }
+.empresa{
+  font-size: 5em;
+
+}
+
 div.input{
   padding-top: 20px;
   padding-bottom: 20px;
-  background: #959dad;
-  /*opacity: inherit;
-  opacity: 0.25;*/
+ background: rgba(130,130,130,.5);    /*opacity: inherit;
+  */
 }
 div.input:hover{
   background-color: right: ;
@@ -47,8 +49,7 @@ div.login{
   height: 25vh;
   display: block;
 }
-div.user{
-  padding-top: 10px;
-  padding-bottom: 10px;
-
+div.datainput{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
