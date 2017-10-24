@@ -4,13 +4,13 @@ html{
 }
 
 .hero{
-  background-image: url(../img/bg-resumen.jpg);
+  background-image: url(../img/encabezado.jpg);
   height: 100vh;
   background-position: top center;
   background-size: cover;
 }
 .contenido-header{
-  padding-top: 40px;
+  padding-top: 50px;
 }
 .redes-sociales{
   text-align: center;
@@ -20,36 +20,61 @@ html{
   font-size: 1.5em;
   margin-right: 20px;
 }
+.redes-sociales a:hover{
+  color:  #fe4918;
+}
 .informacion{
   text-align: center;
   color: #ffffff;
   margin: 0;
-  font-size: 25px;
-  margin-top: 50px;
+  font-size: 3.2vw;
+  margin-top: 30px;
   font-family: 'Montserrat', sans-serif;
 }
 .empresa{
-  font-size: .75em;
-
+  font-size: 7.0vw;
 }
-
 div.input{
   padding-top: 20px;
   padding-bottom: 20px;
- background: rgba(130,130,130,.5);    /*opacity: inherit;
-  */
-}
-div.input:hover{
-  background-color: right: ;
+ background: rgba(130,130,130,.5);
 }
 div.login{
-
-/*opacity: unset;*/
-/*opacity: initial;*/
   height: 25vh;
   display: block;
 }
 div.datainput{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+strong{
+  color: #cc7d01;
+}
+.iconInput{
+  color: #cc7d01;
+}
+button.btnLogin{
+     font-family: 'Oswald', sans-serif;
+     font-size: 1.4em;
+     transition: all .3s ease;
+     width: 100%;
+     text-align: center;
+     border: 2px solid  #0b277b ;
+     background-color: #0b277b;
+     color: #ffffff ;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     border-radius: 12px
+  }
+button.btnLogin:hover{
+    background-color: #cc7d01;
+    color: #ffffff;
+}
+.register{
+  cursor: pointer;
+  font-size: 1.5vw;
   padding-top: 20px;
-  padding-bottom: 20px;
+  color: #fe4918;
+  text-align: center;
+
 }

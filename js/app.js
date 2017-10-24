@@ -14,7 +14,7 @@ const loadPage = ()=>{
       if(users[i].name == userName && users[i].password == userPassWord){
         console.log("this user exist")
       }else{
-        console.log("no exist")
+        alert(`The user o the count doen´t exist`)
       }
     }
   }
@@ -31,10 +31,10 @@ const loadPage = ()=>{
     const newUser = document.getElementById("addUser");
     btnLogin.addEventListener("click",checkCount);
     //s newUser.addEventListener("click",addNewUser);
-
-
 }
+
 
 window.onload= ()=>{
   loadPage();
+
 }
