@@ -2,9 +2,32 @@ html{
   font-family: 'Oswald', sans-serif;
 
 }
+
 .hero{
   background-image: url(../img/back.jpg);
   height: 100vh;
   background-position: top center;
   background-size: cover;
+}
+.contenido-header{
+  padding-top: 40px;
+}
+.redes-sociales{
+  text-align: center;
+}
+.redes-sociales a{
+  color: #ffffff;
+  font-size: 1.5em;
+  margin-right: 20px;
+}
+.informacion{
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  font-size: 25px;
+  margin-top: 50px;
+}
+h2 .informacion{
+  font-family: 'Montserrat', sans-serif;
+
 }
