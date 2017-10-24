@@ -1,0 +1,10 @@
+html{
+  font-family: 'Oswald', sans-serif;
+
+}
+.hero{
+  background-image: url(../img/back.jpg);
+  height: 100vh;
+  background-position: top center;
+  background-size: cover;
+}
