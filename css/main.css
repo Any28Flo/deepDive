@@ -4,7 +4,7 @@ html{
 }
 
 .hero{
-  background-image: url(../img/back.jpg);
+  background-image: url(../img/bg-resumen.jpg);
   height: 100vh;
   background-position: top center;
   background-size: cover;
@@ -30,13 +30,22 @@ html{
 h2 .informacion{
   font-family: 'Montserrat', sans-serif;
 }
-div.login{
+div.input{
+  padding-top: 20px;
+  padding-bottom: 20px;
   background: #959dad;
-opacity: inherit;
-opacity: 0.25;
+  /*opacity: inherit;
+  opacity: 0.25;*/
+}
+div.input:hover{
+  background-color: right: ;
+}
+div.login{
+
 /*opacity: unset;*/
 /*opacity: initial;*/
   height: 25vh;
+  display: block;
 }
 div.user{
   padding-top: 10px;
