@@ -29,5 +29,10 @@ html{
 }
 h2 .informacion{
   font-family: 'Montserrat', sans-serif;
+}
+div.login{
+  background: #959dad;
+  opacity: 0.25;
+  height: 25vh;
 
 }
