@@ -19,7 +19,7 @@ const checkCount = ()=>{
   const userPassWord = document.getElementById("userPassWord");
   console.log(`${userName} ${userPassWord}`);
 }
-const init = ()=>{
+const loadPage = ()=>{
   const btnLogin= document.getElementById('go');
   const newUser = document.getElementById("addUser");
   btnLogin.addEventListener("click",checkCount);
@@ -28,7 +28,6 @@ const init = ()=>{
 
 }
 
-$( document ).ready(function() {
-    init();
-    console.log( "ready!" );
-});
+window.onload= ()=>{
+  loadPage();
+}
