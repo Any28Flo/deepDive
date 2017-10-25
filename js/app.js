@@ -9,10 +9,14 @@ const loadPage = ()=>{
         this.password=password;
       }
   }
+  const redireccionar = ()=>{
+    window.location="insigts.html";
+
+  }
   const validCount= (userName,userPassWord)=>{
     for(let i = 0 ; i < users.length ; i++){
       if(users[i].name == userName && users[i].password == userPassWord){
-        console.log("this user exist")
+        redireccionar();
       }else{
         alert(`The user o the count doen´t exist`)
       }
@@ -22,13 +26,10 @@ const loadPage = ()=>{
     const nameUser = document.getElementById('nameNewUser').value;
     const email=document.getElementById('emailNewUser').value;
     const passwordUser=document.getElementById('passwordNewUser').value;
-
     const userNew = new User( nameUser,email,passwordNewUser);
     users.push(userNew);
-    console.log(users);
-
-    console.log(`hi from add new user`);
-  }
+    redireccionar();
+}
 
   const checkCount = ()=>{
     const userName = document.getElementById("userName").value;
