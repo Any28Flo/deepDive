@@ -19,22 +19,39 @@ const loadPage = ()=>{
     }
   }
   const addNewUser = ()=>{
+    const nameUser = document.getElementById('nameNewUser').value;
+    const email=document.getElementById('emailNewUser').value;
+    const passwordUser=document.getElementById('passwordNewUser').value;
+
+    const userNew = new User( nameUser,email,passwordNewUser);
+    users.push(userNew);
+    console.log(users);
+
     console.log(`hi from add new user`);
   }
+
   const checkCount = ()=>{
     const userName = document.getElementById("userName").value;
     const userPassWord = document.getElementById("userPassWord").value;
     console.log(`${userName} ${userPassWord}`);
     validCount(userName,userPassWord)
+
   }
+
+  const init = ()=>{
     const btnLogin= document.getElementById('go');
-    const newUser = document.getElementById("addUser");
+    const newUser = document.getElementById("createUser");
     btnLogin.addEventListener("click",checkCount);
-    //s newUser.addEventListener("click",addNewUser);
+    newUser.addEventListener("click",addNewUser);
+  }
+
+  init();
+
 }
 
 
 window.onload= ()=>{
   loadPage();
+
 
 }
