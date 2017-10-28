@@ -21,13 +21,23 @@ const loadPage = ()=>{
       }
     }
   }
+  const isValidEmail = (mail)=>{
+    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(mail);
+  }
+
+
   const addNewUser = ()=>{
     const nameUser = document.getElementById('nameNewUser').value;
     const email=document.getElementById('emailNewUser').value;
     const passwordUser=document.getElementById('passwordNewUser').value;
-    const userNew = new User( nameUser,email,passwordNewUser);
-    users.push(userNew);
-    redireccionar();
+    if(isValidEmail(email)){
+      const userNew = new User( nameUser,email,passwordNewUser);
+      users.push(userNew);
+      redireccionar();
+    }else{
+      alert("The email is invalid")
+    }
+
   }
   const checkCount = ()=>{
     const userName = document.getElementById("userName").value;
