@@ -8,12 +8,9 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
 </head>
 <body>
-
   <div class="container-fluid hero">
     <div class=" row contenido-header">
       <nav class="redes-sociales col-12">
@@ -30,7 +27,6 @@
         <p><strong>Data analytics</strong> for your business</p>
       </div>
     </div><!--informacion -->
-
     <div class="row login">
       <div class="col-8  offset-2  col-md-6 offset-md-3  col-lg-4  offset-lg-4 align-self-center  input ">
         <div class="col-12  center datainput">
@@ -65,36 +61,37 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    <div class="col-12   col-sm-12 center datainput">
-                        <label class="sr-only">Username</label>
-                        <div class="input-group mb-2 mb-sm-0">
-                          <div class="input-group-addon"><i class="fa fa-user iconInput" aria-hidden="true"></i></div>
-                        <input type="text" class="form-control iconInput" id="nameNewUser" placeholder="Username">
-                        </div>
-                    </div>
-                    <div class="col-12   col-sm-12 center datainput">
-                        <label class="sr-only">Email</label>
-                        <div class="input-group mb-2 mb-sm-0">
-                          <div class="input-group-addon"><i class="fa fa-envelope iconInput" aria-hidden="true"></i></div>
-                        <input type="email" class="form-control iconInput" id="emailNewUser" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 center datainput">
-                        <label class="sr-only" for="inlineFormInputGroup">Password:</label>
-                        <div class="input-group mb-2 mb-sm-0">
-                          <div class="input-group-addon"><i class="fa fa-lock iconInput" aria-hidden="true"></i></div>
-                        <input type="password" class="form-control iconInput" id="passwordNewUser" placeholder="Password">
-                        </div>
-                    </div>
+                    <form class="col s12" id="crear-usuario">
+                      <div class="col-12   col-sm-12 center datainput">
+                          <label class="sr-only">Username</label>
+                          <div class="input-group mb-2 mb-sm-0">
+                            <div class="input-group-addon"><i class="fa fa-user iconInput" aria-hidden="true"></i></div>
+                          <input type="text" class="form-control iconInput" id="nameNewUser" placeholder="Username">
+                          </div>
+                      </div>
+                      <div class="col-12   col-sm-12 center datainput">
+                          <label class="sr-only">Email</label>
+                          <div class="input-group mb-2 mb-sm-0">
+                            <div class="input-group-addon"><i class="fa fa-envelope iconInput" aria-hidden="true"></i></div>
+                          <input type="email" class="form-control iconInput" id="emailNewUser" placeholder="Email">
+                          </div>
+                      </div>
+                      <div class="col-12 col-sm-12 center datainput">
+                          <label class="sr-only" for="inlineFormInputGroup">Password:</label>
+                          <div class="input-group mb-2 mb-sm-0">
+                            <div class="input-group-addon"><i class="fa fa-lock iconInput" aria-hidden="true"></i></div>
+                          <input type="password" class="form-control iconInput" id="passwordNewUser" placeholder="Password">
+                          </div>
+                      </div>
+                    </form><!-- form crear-usuario -->
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary btnLogin" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary btnLogin" id="createUser">Save changes</button>
+                    <button type="submit" class="btn btn-primary btnLogin" id="createUser">Save changes</button>
                   </div>
                 </div>
               </div>
             </div><!-- modal -->
-
         </div>
       </div><!-- login -->
       </div>
@@ -102,14 +99,14 @@
   </div><!-- hero -->
   <footer>
     <p>Made with love by Analin Flores</p>
-  </footer>
+  </footer><!-- footer -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-  <script type="text/javascript" src="js/app.js">
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/firebase.js">
 
   </script>
-
 </body>
 </html>

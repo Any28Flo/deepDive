@@ -48,9 +48,9 @@ const loadPage = ()=>{
   }
   const init = ()=>{
     const btnLogin= document.getElementById('go');
-    const newUser = document.getElementById("createUser");
+    // const newUser = document.getElementById("createUser");
     btnLogin.addEventListener("click",checkCount);
-    newUser.addEventListener("click",addNewUser);
+    // newUser.addEventListener("click",addNewUser);
   }
   init();
 }
