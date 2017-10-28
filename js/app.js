@@ -26,9 +26,9 @@ const loadPage = ()=>{
     const email=document.getElementById('emailNewUser').value;
     const passwordUser=document.getElementById('passwordNewUser').value;
     const userNew = new User( nameUser,email,passwordNewUser);
-    }
     users.push(userNew);
     redireccionar();
+  }
   const checkCount = ()=>{
     const userName = document.getElementById("userName").value;
     const userPassWord = document.getElementById("userPassWord").value;
